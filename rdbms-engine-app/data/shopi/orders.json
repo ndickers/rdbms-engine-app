@@ -1,0 +1,29 @@
+{
+  "columns": [
+    {
+      "name": "id",
+      "type": "INT",
+      "primary": true,
+      "unique": false
+    },
+    {
+      "name": "user_id",
+      "type": "INT",
+      "primary": false,
+      "unique": false
+    },
+    {
+      "name": "product",
+      "type": "TEXT",
+      "primary": false,
+      "unique": false
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "product": "Laptop"
+    }
+  ]
+}

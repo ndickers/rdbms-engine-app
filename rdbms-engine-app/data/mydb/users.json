@@ -1,0 +1,29 @@
+{
+  "columns": [
+    {
+      "name": "id",
+      "type": "INT",
+      "primary": true,
+      "unique": false
+    },
+    {
+      "name": "email",
+      "type": "TEXT",
+      "primary": false,
+      "unique": false
+    },
+    {
+      "name": "age",
+      "type": "INT",
+      "primary": false,
+      "unique": false
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "email": "alice@test.com",
+      "age": 30
+    }
+  ]
+}
