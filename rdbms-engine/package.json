@@ -5,7 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/web/server.ts"
+    "dev": "ts-node-esm src/web/server.ts",
+    "build": "tsc",
+    "start": "tsc && node dist/web/server.js"
   },
   "keywords": [],
   "author": "",
