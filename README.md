@@ -30,6 +30,7 @@ Additionally, it comes with a **Next.js frontend** for running SQL commands inte
 
 ## Project Structure
 
+````
 mini-rdbms-engine/
 ├── rdbms-engine/ # Backend engine
 │ ├── src/
@@ -75,69 +76,7 @@ mini-rdbms-engine/
 ├── README.md # Project documentation
 └── .gitignore
 
----
-
-Absolutely! Here’s a **complete, polished `README.md`** for your `mini-rdbms-engine` project in Markdown format, including cloning, installation, usage, testing, and more:
-
----
-
-```markdown
-# Mini RDBMS Engine
-
-Mini RDBMS Engine is a lightweight relational database management system implemented in **TypeScript**, with support for multiple databases, tables, CRUD operations, primary/unique keys, joins, and persistent storage.  
-It comes with a **Next.js frontend** for running SQL commands interactively in the browser.
-
----
-
-## Project Structure
-```
-
-mini-rdbms-engine/
-├── rdbms-engine/ # Backend engine
-│ ├── src/
-│ │ ├── core/
-│ │ │ ├── Database.ts # Database class
-│ │ │ ├── DatabaseManager.ts # DatabaseManager class
-│ │ │ ├── Table.ts # Table class
-│ │ │ └── types.ts # Core types (Column, Row, etc.)
-│ │ ├── sql/
-│ │ │ ├── parser.ts # Parse SQL commands
-│ │ │ ├── executor.ts # Execute SQL commands
-│ │ │ └── types.ts # SQL command types
-│ │ ├── persistence/
-│ │ │ └── fileStore.ts # Save/load databases
-│ │ ├── repl/
-│ │ │ └── repl.ts # Terminal REPL
-│ │ └── testAll.ts # Test script for engine
-│ ├── web/
-│ │ └── server.ts # API server for frontend
-│ ├── package.json
-│ ├── tsconfig.json
-│ └── data/ # Database JSON storage
-│
-├── mini-db-client/ # Frontend Next.js client
-│ ├── app/
-│ │ └── page.tsx # Main page / workspace
-│ ├── components/ # Reusable UI components
-│ │ ├── SqlEditor.tsx # SQL editor
-│ │ ├── ResultTable.tsx # Display query results
-│ │ ├── Toolbar.tsx # Run button + action bar
-│ │ ├── DatabaseSidebar.tsx # List of databases
-│ │ ├── StatusBar.tsx # Error/warning messages
-│ │ ├── QueryHistory.tsx # Previously executed queries
-│ │ └── Toast.tsx # Feedback messages
-│ ├── lib/ # Helper functions for API calls
-│ │ ├── api.ts # runSQL(), getDatabases()
-│ │ └── sqlFormatter.ts # Format multi-line SQL
-│ ├── package.json
-│ ├── tailwind.config.js
-│ └── README.md
-│
-├── README.md # This file
-└── .gitignore
-
 ````
-
 ---
 
 ## Installation
@@ -295,14 +234,3 @@ Covers:
 - JOIN queries
 - Multi-database management
 - Persistence across restarts
-
----
-
-## Future Enhancements
-
-- Multi-line SQL support in frontend
-- Enhanced query error highlighting
-- More SQL features: `ORDER BY`, `GROUP BY`, aggregates
-- User authentication for multi-user support
-
----
