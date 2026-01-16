@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@types/node':
-        specifier: ^25.0.8
-        version: 25.0.8
       body-parser:
         specifier: ^2.2.2
         version: 2.2.2
@@ -36,6 +33,9 @@ importers:
       '@types/express':
         specifier: ^5.0.6
         version: 5.0.6
+      '@types/node':
+        specifier: ^25.0.8
+        version: 25.0.8
 
 packages:
 
